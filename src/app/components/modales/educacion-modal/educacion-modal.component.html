@@ -1,0 +1,32 @@
+<form [formGroup]="formulario" (ngSubmit)="guardarEducacion()">
+    <div class="input-group flex-nowrap mt-2">
+        <span class="input-group-text">Institución: </span>
+        <input type="text" class="form-control" placeholder= "Institucion" formControlName="institucion">
+    </div>
+
+    <div class="input-group flex-nowrap mt-2">
+        <span class="input-group-text">Título: </span>
+        <input type="text" class="form-control" placeholder="Titulo" formControlName="titulo" >
+    </div>
+
+    <div class="input-group flex-nowrap mt-2">
+        <label class="input-group-text texto-titulo">Fecha finalización: </label>
+        <input type="date" class="form-control" placeholder="fecha egresado" formControlName="fechafin">
+    </div>
+
+    <div class="input-group flex-nowrap mt-2">
+        <span class="input-group-text">Página web: </span>
+        <input type="text" class="form-control" placeholder="subir certificado" formControlName="institucionurl">
+    </div>
+
+    <div class="input-group flex-nowrap mt-2">
+        <span class="input-group-text">Logo Institución: </span>
+        <input type="text" class="form-control" placeholder="subir logo instituto" formControlName="fotourl">
+    </div>
+
+
+    <div class="button-1">
+        <button class="btn btn-primary">Guardar</button>
+        <button class="btn btn-primary" (click)="cerrarModal()">Cerrar</button>
+    </div>
+</form>

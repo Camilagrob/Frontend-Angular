@@ -1,0 +1,37 @@
+
+#logo {
+    width: 50px;
+}
+
+.login {
+    float: right;
+    margin-left: 10px;
+    border-color:papayawhip;
+    background-color:#810955;
+    color:papayawhip;
+    }
+    button:hover {
+        background-color: #EE81B3;
+    }
+
+.login:hover {
+    background-color: pink;
+    color: black;
+}
+
+.navbar-toggler {
+    border-color: #FFF9D7;
+    background-color: rgb(255, 255, 255);
+    color: #810955;
+}
+
+#yoprogramo p {
+    text-align: center;
+    padding: 9px;
+    display: inline-block;
+}
+nav{    
+    background-color: #810955;
+    color:papayawhip;
+}
+

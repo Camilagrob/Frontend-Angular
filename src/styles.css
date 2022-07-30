@@ -1,0 +1,10 @@
+:root {
+--color: rgba(0, 0, 0, 1);
+--color-hover: rgba(0, 0, 0, 0.75);
+--color-active: rgba(0, 0, 0, 0.5);
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+

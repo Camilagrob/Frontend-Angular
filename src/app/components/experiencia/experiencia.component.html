@@ -1,0 +1,36 @@
+<div class="experiencia m-3">
+  <div class="card-titles">
+    <h3> EXPERIENCIA LABORAL</h3>
+  </div>
+  <ul id="experiencia-modal">
+    <app-addbutton *ngIf="login" (click)="abrirModalAgregar()"></app-addbutton>
+    <br>
+    <br>
+    <li *ngFor="let Exp of experiencia">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 mt-3">
+            <div class="card">
+              <div class="card-horizontal">
+                <div class="col-md-4">
+                  <img [src]="Exp.fotourl" class="img-fluid rounded-start" alt="imagen logo" />
+                </div>
+                <div class="card-body">
+                  <h5>{{Exp.empresa}}</h5>
+                  <h4 class="card-title">{{Exp.puesto}}</h4>
+                  <p class="card-text">{{Exp.descripcion}}</p>
+                  <p class="text-muted">Inicio: {{Exp.inicio}} - Fin: {{Exp.fin}}</p>
+                  <div *ngIf="login" >
+                    <app-editbutton (click)="abrirModal(Exp.idlaboral)" class="me-2"></app-editbutton>  
+                    <app-deletebutton  (click)="borrarExperiencia(Exp.idlaboral)" > </app-deletebutton>
+                  </div>            
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>

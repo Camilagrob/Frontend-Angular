@@ -1,0 +1,28 @@
+<div class="educacion m-3">
+  <div class="card-titles">
+    <h3>EDUCACIÓN</h3>
+  </div>
+  <app-addbutton *ngIf="login" (click)="crearEducacionModal()" ></app-addbutton>
+  <br>
+  <br>
+  <br>
+  <div class="card mb-3" *ngFor="let Edu of educacion">
+    <div class="d-flex">
+      <div class="col-md-4">
+        <img [src]="Edu.fotourl" class="img-fluid" alt="imagen logo">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body"> 
+        <div class="d-flex justify-content-between">
+          <h5 class="card-title">{{Edu.titulo}} </h5>
+            <div *ngIf="login"  >
+              <app-editbutton (click)="abrirModal(Edu.ideducacion)" class="me-2"></app-editbutton>   <app-deletebutton (click)="borrarEducacion(Edu.ideducacion)" ></app-deletebutton>
+            </div>            
+        </div>            
+          <p class="card-text">{{Edu.institucion}}</p>
+          <p class="card-text">{{Edu.institucionurl}}</p>
+          <p class="card-text">{{Edu.fechafin}}</p>
+        </div>  
+    </div>
+  </div>
+  </div>

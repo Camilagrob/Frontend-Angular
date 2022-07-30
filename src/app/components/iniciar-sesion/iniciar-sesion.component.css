@@ -1,0 +1,16 @@
+button {
+    border-color: #810955;
+    background-color:#810955;
+    color: papayawhip;
+    margin: 5px;
+}
+button:hover {
+    background-color: #EE81B3;
+    border-color: #810955;
+}
+.container {
+    border-radius: 10px;
+    border: solid 1px #810955;
+    max-width: 28%;
+    margin: 50px;
+}

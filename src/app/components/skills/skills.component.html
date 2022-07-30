@@ -1,0 +1,26 @@
+<div id="skills">
+  <div class="row m-3">
+    <h3>HARD & SOFT SKILLS</h3>
+        <div *ngFor="let item of skill" class="col-lg-4">
+          <div class=" d-flex justify-content-center">
+              <circle-progress 
+                [percent]="item.dominio"
+                [radius]="100"
+                [subtitle]="item.titulo" 
+                [subtitleColor]="'#FFEFD5'"
+                [titleColor]="'#FFEFD5'"
+                [subtitleFontSize]="'1 em'"
+                [outerStrokeWidth]="12"
+                [innerStrokeWidth]="10"
+                [outerStrokeColor]="'#EE81B3'"
+                [innerStrokeColor]="'#FFF9D7'"
+                [animation]="true"
+                [animationDuration]="500"     
+            ></circle-progress>
+            <app-editbutton *ngIf="login" (click)="abrirModal(item.idskill)" class="d-flex align-items-center me-2"></app-editbutton>
+            <app-deletebutton *ngIf="login" (click)="borrarSkill(item.idskill)" class="d-flex align-items-center"></app-deletebutton>
+          </div>   
+        </div>
+    </div>
+  
+</div>

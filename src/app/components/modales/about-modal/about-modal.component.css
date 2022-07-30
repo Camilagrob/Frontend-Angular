@@ -1,0 +1,10 @@
+button {
+    border-color: #810955;
+    background-color:#810955;
+    color: papayawhip;
+    margin: 5px;
+}
+button:hover {
+    background-color: #EE81B3;
+    border-color: #810955;
+}

@@ -1,0 +1,10 @@
+a{
+    color: papayawhip;
+    background-color:#810955;
+    border-color: papayawhip;
+}
+a:hover {
+    background-color: pink;
+    color: #810955;
+    border-color: papayawhip;
+}

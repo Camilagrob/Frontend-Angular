@@ -1,0 +1,37 @@
+<main class="container">
+  <app-editbutton id="fantasma" *ngIf="login" (click)="abrirModalBanner(persona.idpersona)" class="me-2 banner-edit"
+            style="background-color: rgb(94, 78, 78);"></app-editbutton>
+  <app-banner [url]="persona.coverurl"></app-banner>
+  <div class="card all-card" id="profile-info">
+
+    <div class="info">
+      <div class="info-img">
+        
+        <div class="container">
+            <img [src]="persona.fotourl" class="img-fluid" id="profile-img" alt="Foto de perfil de {{persona.nombre}}">
+            <app-editbutton id="fantasma" *ngIf="login" (click)="abrirModalPhoto(persona.idpersona)" class="me-2"
+            style="background-color: rgb(94, 78, 78);"></app-editbutton>
+        </div>
+      </div>
+      
+      <div class="info-text">
+        <div>
+            <h1 class="card-title" style="display: inline;">{{persona.nombre}} {{persona.apellido}}</h1>
+            <app-editbutton id="fantasma" *ngIf="login" (click)="abrirModal(persona.idpersona)" class="me-2"
+              style="background-color: rgb(94, 78, 78); margin-left: 1rem;"></app-editbutton>
+        </div>
+        
+        <p class="card-text"><b>{{persona.titulo}}</b></p>
+        <div id="info-contact" class="localidad grey">
+          {{persona.ubicacion}}
+          <br>
+          {{persona.email}}
+          <br>
+          {{persona.telefono}}
+        </div>
+        
+      </div>
+      <app-about></app-about>
+    </div>
+  </div>
+</main>

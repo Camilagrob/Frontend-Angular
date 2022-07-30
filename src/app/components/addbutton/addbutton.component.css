@@ -1,0 +1,15 @@
+#add {
+    background-color: #610C63;
+    color: papayawhip;
+    border-color:papayawhip;
+    display: flex;
+    float: right;
+    margin-right: 2rem;
+}
+#add:hover {
+    background-color: #EE81B3;
+    color:#610C63;
+}
+#add:active {
+    opacity: 0.50;
+}
